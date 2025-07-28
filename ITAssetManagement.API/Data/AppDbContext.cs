@@ -21,7 +21,7 @@ namespace ITAssetManagement.API.Data
                 {
                     Id = 1,
                     Username = "admin",
-                    Password = "admin123", // In production, this should be hashed
+                    Password = "admin123", 
                     Role = "Admin",
                     FullName = "System Administrator",
                     Email = "admin@company.com"
@@ -30,7 +30,7 @@ namespace ITAssetManagement.API.Data
                 {
                     Id = 2,
                     Username = "user",
-                    Password = "user123", // In production, this should be hashed
+                    Password = "user123", 
                     Role = "User",
                     FullName = "Normal User",
                     Email = "user@company.com"
