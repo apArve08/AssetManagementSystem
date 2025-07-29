@@ -1,5 +1,5 @@
 <template>
-    <nav class="bg-blue-600 text-white shadow-lg">
+  <nav class="bg-blue-600 text-white shadow-lg">
     <div class="container mx-auto px-4">
       <div class="flex justify-between items-center h-16">
         <div class="flex items-center space-x-8">
@@ -26,10 +26,8 @@
   </nav>
 </template>
 
-
 <script setup>
 const authStore = useAuthStore()
-const { $api } = useNuxtApp()
 
 const logout = () => {
   authStore.logout()

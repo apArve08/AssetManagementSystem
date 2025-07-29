@@ -1,17 +1,17 @@
 import axios from 'axios'
 
 export default defineNuxtPlugin(() => {
-    const config = useRuntimeConfig()
-    const authStore = useAuthStore()
+  const config = useRuntimeConfig()
+  const authStore = useAuthStore()
 
-    const api = axios.create({
-        baseURL: config.public.apiBase,
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
+  const api = axios.create({
+    baseURL: config.public.apiBase,
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
 
-     // Request interceptor to add auth token
+  // Request interceptor to add auth token
   api.interceptors.request.use(
     (config) => {
       if (authStore.token) {
