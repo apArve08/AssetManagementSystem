@@ -51,7 +51,7 @@ bash
 dotnet run
 
 
-The API will start at https://localhost:7001 (or check the console for the actual port)
+The API will start at https://localhost:7001 (or check the console for the actual port) // 5190(http)
 
 Frontend Setup
 
@@ -92,7 +92,7 @@ In nuxt.config.ts, update the apiBase to match your backend URL:
 typescript
 runtimeConfig: {
   public: {
-    apiBase: 'https://localhost:7001/api' // Update this
+    apiBase: 'https://localhost:7001/api' // Update this  //http://localhost:5190/api
   }
 }
 
